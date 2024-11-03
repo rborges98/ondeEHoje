@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'athletic-outfit';
+  src: url('/fonts/athletic-outfit.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
