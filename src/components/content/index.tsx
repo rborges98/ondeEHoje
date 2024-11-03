@@ -1,9 +1,11 @@
 'use client'
 
-import Map from '../map'
 import { PlaceProvider } from '@/src/context'
 import Sidebar from '../sidebar'
 import UserPositionRange from '../mapRange'
+import dynamic from 'next/dynamic'
+
+const Map = dynamic(() => import('../map'), { ssr: false })
 
 const Content = () => {
   return (
