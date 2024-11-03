@@ -13,21 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="manifest" href="/manifest.json" />
-      </head>
-      <body className="min-w-screen relative min-h-screen">
-        <img
-          className="absolute size-full object-fill"
-          src="https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTMyfHxmdW5kb3xlbnwwfHwwfHx8MA%3D%3D"
-        />
-        <main className="relative z-10 flex min-h-screen w-full flex-col items-center justify-center">
-          <h1 className="font-shadow pb-10 text-center font-athletic-outfit text-8xl text-white">
-            Onde é Hoje?
-          </h1>
-          {children}
-        </main>
-      </body>
+      <body className="min-w-screen relative min-h-screen">{children}</body>
     </html>
   )
 }

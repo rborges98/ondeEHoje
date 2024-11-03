@@ -1,3 +1,5 @@
+'use client'
+
 import { PlaceContext } from '@/src/context'
 import { useContext } from 'react'
 

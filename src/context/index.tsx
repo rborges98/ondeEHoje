@@ -1,4 +1,6 @@
-import React, { createContext, useState } from 'react'
+'use client'
+
+import React, { createContext, ReactNode, useState } from 'react'
 
 type Context = {
   place: any
@@ -6,10 +8,16 @@ type Context = {
   range: any
   setRange: (range: any) => void
 }
+const defaultContext: Context = {
+  place: { show: false },
+  setPlace: () => {},
+  range: 0,
+  setRange: () => {}
+}
 
-export const PlaceContext = createContext<Context>({})
+export const PlaceContext = createContext<Context>(defaultContext)
 
-export const PlaceProvider = ({ children }) => {
+export const PlaceProvider = ({ children }: { children: ReactNode }) => {
   const [place, setPlace] = useState({ show: false })
   const [range, setRange] = useState(10)
 
