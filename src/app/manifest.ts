@@ -3,7 +3,7 @@ import type { MetadataRoute } from 'next'
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Onde e hoje?',
-    short_name: 'OndeEHoje?',
+    short_name: 'Onde é hoje?',
     description: 'A Progressive Web App built with Next.js',
     start_url: '/',
     display: 'standalone',

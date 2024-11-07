@@ -54,7 +54,6 @@ const Sidebar = () => {
           {place?.address?.neighborhood}
         </p>
         <Rating score={place?.rating} />
-        <p>tags</p>
       </div>
     </aside>
   )
